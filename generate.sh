@@ -50,9 +50,9 @@ command_error_exit() {
 # fi
 command_error_exit mkdir $project_name
 command_error_exit cd $project_name
-command_error_exit git clone git@github.com:Wwtking/WebServer.git
-command_error_exit cp WebServer/Makefile .
-command_error_exit cp -rf WebServer/template/* .
+command_error_exit git clone git@github.com:Wwtking/WebServer_sylar.git
+command_error_exit cp WebServer_sylar/Makefile .
+command_error_exit cp -rf WebServer_sylar/template/* .
 command_error_exit mv template $namespace
 # sed 可以从标准输入或文件中读取文本，对文本进行编辑，并将结果输出到标准输出或文件中
 # sed 命令的 -i 选项表示直接修改文件，而不是输出到标准输出
