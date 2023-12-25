@@ -1,7 +1,0 @@
-/home/wwt/WebServer_sylar/build/CMakeFiles/rebuild_cache.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/edit_cache.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/bin_sylar.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/orm.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/email_test.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/sqlite3_test.dir
-/home/wwt/WebServer_sylar/build/CMakeFiles/sylar.dir
