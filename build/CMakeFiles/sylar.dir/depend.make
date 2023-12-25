@@ -1262,6 +1262,7 @@ CMakeFiles/sylar.dir/src/util/json_util.cpp.o: ../include/json/value.h
 CMakeFiles/sylar.dir/src/util/json_util.cpp.o: ../include/json/version.h
 CMakeFiles/sylar.dir/src/util/json_util.cpp.o: ../include/json/writer.h
 CMakeFiles/sylar.dir/src/util/json_util.cpp.o: ../include/util/json_util.h
+CMakeFiles/sylar.dir/src/util/json_util.cpp.o: ../src/util/json_util.cpp
 
 CMakeFiles/sylar.dir/src/worker.cpp.o: ../include/config.h
 CMakeFiles/sylar.dir/src/worker.cpp.o: ../include/fiber.h

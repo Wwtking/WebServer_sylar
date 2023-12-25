@@ -310,9 +310,9 @@ string
 json/json.h
 -
 
-/home/wwt/chat_room/WebServer/tests/email_test.cpp
+/home/wwt/WebServer_sylar/tests/email_test.cpp
 smtp.h
-/home/wwt/chat_room/WebServer/tests/smtp.h
+/home/wwt/WebServer_sylar/tests/smtp.h
 iomanager.h
-/home/wwt/chat_room/WebServer/tests/iomanager.h
+/home/wwt/WebServer_sylar/tests/iomanager.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/wwt/chat_room/WebServer
+# Install script for directory: /home/wwt/WebServer_sylar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wwt/chat_room/WebServer/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/wwt/WebServer_sylar/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

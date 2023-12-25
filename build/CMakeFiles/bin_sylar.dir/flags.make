@@ -6,7 +6,7 @@ CXX_FLAGS =  -rdynamic -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wwt/chat_room/WebServer/include -I/home/wwt/chat_room/WebServer/include/http -I/home/wwt/chat_room/WebServer/include/stream -I/home/wwt/chat_room/WebServer/include/util -I/home/wwt/chat_room/WebServer/include/db -I/home/wwt/chat_room/WebServer/include/orm -I/home/wwt/chat_room/WebServer/include/email 
+CXX_INCLUDES = -I/home/wwt/WebServer_sylar/include -I/home/wwt/WebServer_sylar/include/http -I/home/wwt/WebServer_sylar/include/stream -I/home/wwt/WebServer_sylar/include/util -I/home/wwt/WebServer_sylar/include/db -I/home/wwt/WebServer_sylar/include/orm -I/home/wwt/WebServer_sylar/include/email 
 
 # Custom defines: CMakeFiles/bin_sylar.dir/src/main.cpp.o_DEFINES = __FILE__="src/main.cpp"
 

@@ -1,5 +1,5 @@
 
-#line 1 "/home/wwt/sylar/src/uri.rl"
+#line 1 "/home/wwt/WebServer_sylar/src/uri.rl"
 #include "uri.h"
 #include <sstream>
 
@@ -7,7 +7,7 @@
 namespace sylar {
 
 
-#line 11 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 11 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 static const int uri_parser_start = 451;
 static const int uri_parser_first_final = 451;
 static const int uri_parser_error = 0;
@@ -15,7 +15,7 @@ static const int uri_parser_error = 0;
 static const int uri_parser_en_main = 451;
 
 
-#line 152 "/home/wwt/sylar/src/uri.rl"
+#line 152 "/home/wwt/WebServer_sylar/src/uri.rl"
 
 
 Uri::ptr Uri::CreateUri(const std::string& uriStr) {
@@ -24,19 +24,19 @@ Uri::ptr Uri::CreateUri(const std::string& uriStr) {
     const char* mark = 0;   // 解析过程的标记
 
     
-#line 28 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 28 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	{
 	cs = uri_parser_start;
 	}
 
-#line 160 "/home/wwt/sylar/src/uri.rl"
+#line 160 "/home/wwt/WebServer_sylar/src/uri.rl"
 
     const char* p = uriStr.c_str();     // 状态机处理字符串的起始地址
     const char* pe = p + uriStr.size(); // 状态机处理字符串的结束地址
     const char* eof = pe;               // 字符串末尾
 
     
-#line 40 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 40 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -98,11 +98,11 @@ case 452:
 		goto st452;
 	goto st0;
 tr467:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 54 "/home/wwt/sylar/src/uri.rl"
+#line 54 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "query=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -112,7 +112,7 @@ tr467:
     }
 	goto st453;
 tr469:
-#line 54 "/home/wwt/sylar/src/uri.rl"
+#line 54 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "query=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -122,11 +122,11 @@ tr469:
     }
 	goto st453;
 tr474:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -134,7 +134,7 @@ tr474:
     }
 	goto st453;
 tr485:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -142,11 +142,11 @@ tr485:
     }
 	goto st453;
 tr489:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -156,7 +156,7 @@ tr489:
     }
 	goto st453;
 tr493:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -166,17 +166,17 @@ tr493:
     }
 	goto st453;
 tr548:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -186,17 +186,17 @@ tr548:
     }
 	goto st453;
 tr559:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -206,7 +206,7 @@ tr559:
     }
 	goto st453;
 tr563:
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -216,11 +216,11 @@ tr563:
     }
 	goto st453;
 tr566:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -228,7 +228,7 @@ tr566:
         }
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -238,7 +238,7 @@ tr566:
     }
 	goto st453;
 tr570:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -246,11 +246,11 @@ tr570:
         }
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -263,7 +263,7 @@ st453:
 	if ( ++p == pe )
 		goto _test_eof453;
 case 453:
-#line 267 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 267 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 37: goto tr463;
 		case 45: goto st0;
@@ -285,7 +285,7 @@ case 453:
 		goto st0;
 	goto tr462;
 tr462:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -294,7 +294,7 @@ st454:
 	if ( ++p == pe )
 		goto _test_eof454;
 case 454:
-#line 298 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 298 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 37: goto st1;
 		case 45: goto st0;
@@ -316,7 +316,7 @@ case 454:
 		goto st0;
 	goto st454;
 tr463:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -325,7 +325,7 @@ st1:
 	if ( ++p == pe )
 		goto _test_eof1;
 case 1:
-#line 329 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 329 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st2;
@@ -375,11 +375,11 @@ case 4:
 		goto st452;
 	goto st0;
 tr476:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -387,7 +387,7 @@ tr476:
     }
 	goto st455;
 tr486:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -395,11 +395,11 @@ tr486:
     }
 	goto st455;
 tr490:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -409,7 +409,7 @@ tr490:
     }
 	goto st455;
 tr494:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -422,7 +422,7 @@ st455:
 	if ( ++p == pe )
 		goto _test_eof455;
 case 455:
-#line 426 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 426 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 34: goto st0;
 		case 35: goto st453;
@@ -470,11 +470,11 @@ case 6:
 		goto st455;
 	goto st0;
 tr482:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -482,7 +482,7 @@ tr482:
     }
 	goto st456;
 tr488:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -490,11 +490,11 @@ tr488:
     }
 	goto st456;
 tr492:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -504,7 +504,7 @@ tr492:
     }
 	goto st456;
 tr496:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -514,17 +514,17 @@ tr496:
     }
 	goto st456;
 tr556:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -534,17 +534,17 @@ tr556:
     }
 	goto st456;
 tr562:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -554,7 +554,7 @@ tr562:
     }
 	goto st456;
 tr565:
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -564,11 +564,11 @@ tr565:
     }
 	goto st456;
 tr569:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -576,7 +576,7 @@ tr569:
         }
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -586,7 +586,7 @@ tr569:
     }
 	goto st456;
 tr573:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -594,11 +594,11 @@ tr573:
         }
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -611,7 +611,7 @@ st456:
 	if ( ++p == pe )
 		goto _test_eof456;
 case 456:
-#line 615 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 615 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 34: goto st0;
 		case 35: goto tr467;
@@ -632,7 +632,7 @@ case 456:
 		goto st0;
 	goto tr466;
 tr466:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -641,7 +641,7 @@ st457:
 	if ( ++p == pe )
 		goto _test_eof457;
 case 457:
-#line 645 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 645 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 34: goto st0;
 		case 35: goto tr469;
@@ -662,7 +662,7 @@ case 457:
 		goto st0;
 	goto st457;
 tr468:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -671,7 +671,7 @@ st7:
 	if ( ++p == pe )
 		goto _test_eof7;
 case 7:
-#line 675 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 675 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st8;
@@ -755,7 +755,7 @@ case 459:
 		goto tr480;
 	goto st0;
 tr472:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -764,7 +764,7 @@ st9:
 	if ( ++p == pe )
 		goto _test_eof9;
 case 9:
-#line 768 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 768 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( 48 <= (*p) && (*p) <= 52 )
 		goto st10;
 	goto st0;
@@ -889,11 +889,11 @@ case 460:
 	}
 	goto st0;
 tr507:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -901,7 +901,7 @@ tr507:
     }
 	goto st461;
 tr487:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -912,7 +912,7 @@ st461:
 	if ( ++p == pe )
 		goto _test_eof461;
 case 461:
-#line 916 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 916 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 35: goto tr489;
 		case 47: goto tr490;
@@ -922,7 +922,7 @@ case 461:
 		goto tr491;
 	goto st0;
 tr491:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -931,7 +931,7 @@ st462:
 	if ( ++p == pe )
 		goto _test_eof462;
 case 462:
-#line 935 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 935 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 35: goto tr493;
 		case 47: goto tr494;
@@ -1070,7 +1070,7 @@ case 30:
 		goto st15;
 	goto st0;
 tr473:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1079,7 +1079,7 @@ st467:
 	if ( ++p == pe )
 		goto _test_eof467;
 case 467:
-#line 1083 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1083 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st467;
 		case 35: goto tr485;
@@ -1105,7 +1105,7 @@ case 467:
 		goto st467;
 	goto st0;
 tr475:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1114,7 +1114,7 @@ st31:
 	if ( ++p == pe )
 		goto _test_eof31;
 case 31:
-#line 1118 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1118 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st32;
@@ -1138,11 +1138,11 @@ case 32:
 		goto st467;
 	goto st0;
 tr481:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -1150,7 +1150,7 @@ tr481:
     }
 	goto st468;
 tr499:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -1161,7 +1161,7 @@ st468:
 	if ( ++p == pe )
 		goto _test_eof468;
 case 468:
-#line 1165 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1165 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st33;
 		case 35: goto tr489;
@@ -1241,7 +1241,7 @@ case 35:
 		goto st33;
 	goto st0;
 tr38:
-#line 24 "/home/wwt/sylar/src/uri.rl"
+#line 24 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "userinfo=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -1251,11 +1251,11 @@ tr38:
     }
 	goto st469;
 tr483:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 24 "/home/wwt/sylar/src/uri.rl"
+#line 24 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "userinfo=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -1268,7 +1268,7 @@ st469:
 	if ( ++p == pe )
 		goto _test_eof469;
 case 469:
-#line 1272 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1272 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 2: goto tr472;
 		case 33: goto tr501;
@@ -1300,7 +1300,7 @@ case 469:
 		goto tr506;
 	goto st0;
 tr501:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1309,7 +1309,7 @@ st470:
 	if ( ++p == pe )
 		goto _test_eof470;
 case 470:
-#line 1313 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1313 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st470;
 		case 35: goto tr485;
@@ -1334,7 +1334,7 @@ case 470:
 		goto st470;
 	goto st0;
 tr502:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1343,7 +1343,7 @@ st36:
 	if ( ++p == pe )
 		goto _test_eof36;
 case 36:
-#line 1347 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1347 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st37;
@@ -1367,7 +1367,7 @@ case 37:
 		goto st470;
 	goto st0;
 tr503:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1376,7 +1376,7 @@ st471:
 	if ( ++p == pe )
 		goto _test_eof471;
 case 471:
-#line 1380 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1380 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st470;
 		case 35: goto tr485;
@@ -1790,7 +1790,7 @@ case 484:
 		goto st470;
 	goto st0;
 tr504:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1799,7 +1799,7 @@ st485:
 	if ( ++p == pe )
 		goto _test_eof485;
 case 485:
-#line 1803 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1803 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st470;
 		case 35: goto tr485;
@@ -1826,7 +1826,7 @@ case 485:
 		goto st486;
 	goto st0;
 tr506:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1835,7 +1835,7 @@ st486:
 	if ( ++p == pe )
 		goto _test_eof486;
 case 486:
-#line 1839 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1839 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st470;
 		case 35: goto tr485;
@@ -1862,7 +1862,7 @@ case 486:
 		goto st471;
 	goto st0;
 tr505:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1871,7 +1871,7 @@ st487:
 	if ( ++p == pe )
 		goto _test_eof487;
 case 487:
-#line 1875 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1875 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st470;
 		case 35: goto tr485;
@@ -1930,7 +1930,7 @@ case 488:
 		goto st470;
 	goto st0;
 tr484:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -1939,7 +1939,7 @@ st38:
 	if ( ++p == pe )
 		goto _test_eof38;
 case 38:
-#line 1943 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 1943 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 58: goto st146;
 		case 118: goto st225;
@@ -4781,7 +4781,7 @@ case 228:
 		goto st228;
 	goto st0;
 tr500:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -4790,7 +4790,7 @@ st489:
 	if ( ++p == pe )
 		goto _test_eof489;
 case 489:
-#line 4794 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 4794 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st33;
 		case 35: goto tr493;
@@ -4819,7 +4819,7 @@ case 489:
 		goto st33;
 	goto st0;
 tr477:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -4828,7 +4828,7 @@ st490:
 	if ( ++p == pe )
 		goto _test_eof490;
 case 490:
-#line 4832 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 4832 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st467;
 		case 35: goto tr485;
@@ -5256,7 +5256,7 @@ case 503:
 		goto st467;
 	goto st0;
 tr478:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5265,7 +5265,7 @@ st504:
 	if ( ++p == pe )
 		goto _test_eof504;
 case 504:
-#line 5269 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5269 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st467;
 		case 35: goto tr485;
@@ -5293,7 +5293,7 @@ case 504:
 		goto st505;
 	goto st0;
 tr480:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5302,7 +5302,7 @@ st505:
 	if ( ++p == pe )
 		goto _test_eof505;
 case 505:
-#line 5306 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5306 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st467;
 		case 35: goto tr485;
@@ -5330,7 +5330,7 @@ case 505:
 		goto st490;
 	goto st0;
 tr479:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5339,7 +5339,7 @@ st506:
 	if ( ++p == pe )
 		goto _test_eof506;
 case 506:
-#line 5343 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5343 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st467;
 		case 35: goto tr485;
@@ -5400,7 +5400,7 @@ case 507:
 		goto st467;
 	goto st0;
 tr461:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5409,7 +5409,7 @@ st508:
 	if ( ++p == pe )
 		goto _test_eof508;
 case 508:
-#line 5413 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5413 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st452;
 		case 35: goto st453;
@@ -5437,7 +5437,7 @@ case 508:
 		goto st508;
 	goto st0;
 tr543:
-#line 18 "/home/wwt/sylar/src/uri.rl"
+#line 18 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "scheme=" << std::string(mark, fpc - mark) << std::endl;
         uri->setScheme(std::string(mark, p - mark));
@@ -5448,7 +5448,7 @@ st509:
 	if ( ++p == pe )
 		goto _test_eof509;
 case 509:
-#line 5452 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5452 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 34: goto st0;
 		case 35: goto st453;
@@ -5531,7 +5531,7 @@ case 511:
 		goto tr554;
 	goto st0;
 tr546:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5540,7 +5540,7 @@ st229:
 	if ( ++p == pe )
 		goto _test_eof229;
 case 229:
-#line 5544 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5544 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( 48 <= (*p) && (*p) <= 52 )
 		goto st230;
 	goto st0;
@@ -5665,11 +5665,11 @@ case 512:
 	}
 	goto st0;
 tr550:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -5677,11 +5677,11 @@ tr550:
     }
 	goto st513;
 tr567:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -5691,19 +5691,19 @@ tr567:
     }
 	goto st513;
 tr560:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
 	goto st513;
 tr571:
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -5711,7 +5711,7 @@ tr571:
         }
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5720,7 +5720,7 @@ st513:
 	if ( ++p == pe )
 		goto _test_eof513;
 case 513:
-#line 5724 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5724 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 34: goto st0;
 		case 35: goto tr563;
@@ -5768,11 +5768,11 @@ case 244:
 		goto st513;
 	goto st0;
 tr584:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -5780,7 +5780,7 @@ tr584:
     }
 	goto st514;
 tr561:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -5791,7 +5791,7 @@ st514:
 	if ( ++p == pe )
 		goto _test_eof514;
 case 514:
-#line 5795 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5795 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 35: goto tr566;
 		case 47: goto tr567;
@@ -5801,7 +5801,7 @@ case 514:
 		goto tr568;
 	goto st0;
 tr568:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5810,7 +5810,7 @@ st515:
 	if ( ++p == pe )
 		goto _test_eof515;
 case 515:
-#line 5814 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5814 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 35: goto tr570;
 		case 47: goto tr571;
@@ -5949,7 +5949,7 @@ case 252:
 		goto st235;
 	goto st0;
 tr547:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5958,7 +5958,7 @@ st520:
 	if ( ++p == pe )
 		goto _test_eof520;
 case 520:
-#line 5962 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5962 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st520;
 		case 35: goto tr559;
@@ -5984,7 +5984,7 @@ case 520:
 		goto st520;
 	goto st0;
 tr549:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -5993,7 +5993,7 @@ st253:
 	if ( ++p == pe )
 		goto _test_eof253;
 case 253:
-#line 5997 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 5997 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st254;
@@ -6017,11 +6017,11 @@ case 254:
 		goto st520;
 	goto st0;
 tr555:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -6029,7 +6029,7 @@ tr555:
     }
 	goto st521;
 tr576:
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -6040,7 +6040,7 @@ st521:
 	if ( ++p == pe )
 		goto _test_eof521;
 case 521:
-#line 6044 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6044 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st255;
 		case 35: goto tr566;
@@ -6120,7 +6120,7 @@ case 257:
 		goto st255;
 	goto st0;
 tr263:
-#line 24 "/home/wwt/sylar/src/uri.rl"
+#line 24 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "userinfo=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -6130,11 +6130,11 @@ tr263:
     }
 	goto st522;
 tr557:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 24 "/home/wwt/sylar/src/uri.rl"
+#line 24 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "userinfo=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -6147,7 +6147,7 @@ st522:
 	if ( ++p == pe )
 		goto _test_eof522;
 case 522:
-#line 6151 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6151 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 2: goto tr546;
 		case 33: goto tr578;
@@ -6179,7 +6179,7 @@ case 522:
 		goto tr583;
 	goto st0;
 tr578:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6188,7 +6188,7 @@ st523:
 	if ( ++p == pe )
 		goto _test_eof523;
 case 523:
-#line 6192 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6192 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st523;
 		case 35: goto tr559;
@@ -6213,7 +6213,7 @@ case 523:
 		goto st523;
 	goto st0;
 tr579:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6222,7 +6222,7 @@ st258:
 	if ( ++p == pe )
 		goto _test_eof258;
 case 258:
-#line 6226 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6226 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st259;
@@ -6246,7 +6246,7 @@ case 259:
 		goto st523;
 	goto st0;
 tr580:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6255,7 +6255,7 @@ st524:
 	if ( ++p == pe )
 		goto _test_eof524;
 case 524:
-#line 6259 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6259 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st523;
 		case 35: goto tr559;
@@ -6669,7 +6669,7 @@ case 537:
 		goto st523;
 	goto st0;
 tr581:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6678,7 +6678,7 @@ st538:
 	if ( ++p == pe )
 		goto _test_eof538;
 case 538:
-#line 6682 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6682 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st523;
 		case 35: goto tr559;
@@ -6705,7 +6705,7 @@ case 538:
 		goto st539;
 	goto st0;
 tr583:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6714,7 +6714,7 @@ st539:
 	if ( ++p == pe )
 		goto _test_eof539;
 case 539:
-#line 6718 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6718 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st523;
 		case 35: goto tr559;
@@ -6741,7 +6741,7 @@ case 539:
 		goto st524;
 	goto st0;
 tr582:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6750,7 +6750,7 @@ st540:
 	if ( ++p == pe )
 		goto _test_eof540;
 case 540:
-#line 6754 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6754 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st523;
 		case 35: goto tr559;
@@ -6809,7 +6809,7 @@ case 541:
 		goto st523;
 	goto st0;
 tr558:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -6818,7 +6818,7 @@ st260:
 	if ( ++p == pe )
 		goto _test_eof260;
 case 260:
-#line 6822 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 6822 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 58: goto st368;
 		case 118: goto st447;
@@ -9660,7 +9660,7 @@ case 450:
 		goto st450;
 	goto st0;
 tr577:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -9669,7 +9669,7 @@ st542:
 	if ( ++p == pe )
 		goto _test_eof542;
 case 542:
-#line 9673 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 9673 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st255;
 		case 35: goto tr570;
@@ -9698,7 +9698,7 @@ case 542:
 		goto st255;
 	goto st0;
 tr551:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -9707,7 +9707,7 @@ st543:
 	if ( ++p == pe )
 		goto _test_eof543;
 case 543:
-#line 9711 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 9711 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st520;
 		case 35: goto tr559;
@@ -10135,7 +10135,7 @@ case 556:
 		goto st520;
 	goto st0;
 tr552:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -10144,7 +10144,7 @@ st557:
 	if ( ++p == pe )
 		goto _test_eof557;
 case 557:
-#line 10148 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 10148 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st520;
 		case 35: goto tr559;
@@ -10172,7 +10172,7 @@ case 557:
 		goto st558;
 	goto st0;
 tr554:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -10181,7 +10181,7 @@ st558:
 	if ( ++p == pe )
 		goto _test_eof558;
 case 558:
-#line 10185 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 10185 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st520;
 		case 35: goto tr559;
@@ -10209,7 +10209,7 @@ case 558:
 		goto st543;
 	goto st0;
 tr553:
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
@@ -10218,7 +10218,7 @@ st559:
 	if ( ++p == pe )
 		goto _test_eof559;
 case 559:
-#line 10222 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 10222 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st520;
 		case 35: goto tr559;
@@ -10886,7 +10886,7 @@ case 560:
 	case 505: 
 	case 506: 
 	case 507: 
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -10895,7 +10895,7 @@ case 560:
 	break;
 	case 462: 
 	case 489: 
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10905,7 +10905,7 @@ case 560:
     }
 	break;
 	case 513: 
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10915,7 +10915,7 @@ case 560:
     }
 	break;
 	case 457: 
-#line 54 "/home/wwt/sylar/src/uri.rl"
+#line 54 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "query=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10925,7 +10925,7 @@ case 560:
     }
 	break;
 	case 454: 
-#line 62 "/home/wwt/sylar/src/uri.rl"
+#line 62 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "fragment=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10936,11 +10936,11 @@ case 560:
 	break;
 	case 459: 
 	case 469: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
@@ -10949,11 +10949,11 @@ case 560:
 	break;
 	case 461: 
 	case 468: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10963,11 +10963,11 @@ case 560:
     }
 	break;
 	case 456: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 54 "/home/wwt/sylar/src/uri.rl"
+#line 54 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "query=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10977,11 +10977,11 @@ case 560:
     }
 	break;
 	case 453: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 62 "/home/wwt/sylar/src/uri.rl"
+#line 62 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "fragment=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -10992,17 +10992,17 @@ case 560:
 	break;
 	case 511: 
 	case 522: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11013,11 +11013,11 @@ case 560:
 	break;
 	case 514: 
 	case 521: 
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11025,7 +11025,7 @@ case 560:
         }
         mark = NULL;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11077,17 +11077,17 @@ case 560:
 	case 558: 
 	case 559: 
 	case 560: 
-#line 32 "/home/wwt/sylar/src/uri.rl"
+#line 32 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "host=" << std::string(mark, fpc - mark) << std::endl;
         uri->setHost(std::string(mark, p - mark));
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11098,7 +11098,7 @@ case 560:
 	break;
 	case 515: 
 	case 542: 
-#line 38 "/home/wwt/sylar/src/uri.rl"
+#line 38 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "port=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11106,11 +11106,11 @@ case 560:
         }
         mark = NULL;
     }
-#line 13 "/home/wwt/sylar/src/uri.rl"
+#line 13 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         mark = p;
     }
-#line 46 "/home/wwt/sylar/src/uri.rl"
+#line 46 "/home/wwt/WebServer_sylar/src/uri.rl"
 	{
         // std::cout << "path=" << std::string(mark, fpc - mark) << std::endl;
         if(mark != p) {
@@ -11119,14 +11119,14 @@ case 560:
         mark = NULL;
     }
 	break;
-#line 11123 "/home/wwt/sylar/src/uri.rl.cpp"
+#line 11123 "/home/wwt/WebServer_sylar/src/uri.rl.cpp"
 	}
 	}
 
 	_out: {}
 	}
 
-#line 166 "/home/wwt/sylar/src/uri.rl"
+#line 166 "/home/wwt/WebServer_sylar/src/uri.rl"
 
     if(cs == uri_parser_error) {    // 解析出错
         return nullptr;

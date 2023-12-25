@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/wwt/chat_room/WebServer/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/wwt/WebServer_sylar/build/CMakeFiles/3.14.5/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,46 +23,53 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/wwt/chat_room/WebServer/build/CMakeFiles/3.14.5/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/wwt/WebServer_sylar/build/CMakeFiles/3.14.5/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_8f99c/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_8f99c.dir/build.make CMakeFiles/cmTC_8f99c.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8f99c.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8f99c.dir/testCCompiler.c.o   -c /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8f99c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f99c.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8f99c.dir/testCCompiler.c.o  -o cmTC_8f99c 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_c068f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_c068f.dir/build.make CMakeFiles/cmTC_c068f.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c068f.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c068f.dir/testCCompiler.c.o   -c /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_c068f
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c068f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c068f.dir/testCCompiler.c.o  -o cmTC_c068f 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_603a0/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_603a0.dir/build.make CMakeFiles/cmTC_603a0.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake cmTC_3c06a/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_3c06a.dir/build.make CMakeFiles/cmTC_3c06a.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-redhat-linux
 Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-x86_64-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccY5V6d8.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/local/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccjENnZz.s
 GNU C17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (x86_64-redhat-linux)
 	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "."
+ignoring duplicate directory "/usr/local/include/hiredis-vip"
+ignoring duplicate directory "."
+ignoring duplicate directory "/usr/local/include/hiredis-vip"
+ignoring duplicate directory "."
 ignoring nonexistent directory "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
 ignoring nonexistent directory "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
+ .
+ /usr/local/include/hiredis-vip
  /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include
  /usr/local/include
  /opt/rh/devtoolset-8/root/usr/include
@@ -73,15 +80,15 @@ GNU C17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (x86_64-redhat-linux)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 44fd30fd0fdcf2e8887a67e69c89caa4
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/as -v --64 -o CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o /tmp/ccY5V6d8.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/as -v --64 -o CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o /tmp/ccjENnZz.s
 GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-55.el7.2
 COMPILER_PATH=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_603a0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_603a0.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o  -o cmTC_603a0 
+LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_3c06a
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c06a.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o  -o cmTC_3c06a 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
@@ -90,53 +97,64 @@ Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortra
 Thread model: posix
 gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
 COMPILER_PATH=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_603a0' '-mtune=generic' '-march=x86-64'
- /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGaqsvf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_603a0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_603a0' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3c06a' '-mtune=generic' '-march=x86-64'
+ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQ0O7jB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c06a /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3c06a' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
+    add: [.]
+    add: [/usr/local/include/hiredis-vip]
     add: [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include]
     add: [/usr/local/include]
     add: [/opt/rh/devtoolset-8/root/usr/include]
     add: [/usr/include]
   end of search list found
+  skipping relative include dir [.]
+  collapse include dir [/usr/local/include/hiredis-vip] ==> [/usr/local/include/hiredis-vip]
   collapse include dir [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
   collapse include dir [/opt/rh/devtoolset-8/root/usr/include] ==> [/opt/rh/devtoolset-8/root/usr/include]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/opt/rh/devtoolset-8/root/usr/include;/usr/include]
+  implicit include dirs: [/usr/local/include/hiredis-vip;/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/opt/rh/devtoolset-8/root/usr/include;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_603a0/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_603a0.dir/build.make CMakeFiles/cmTC_603a0.dir/build]
-  ignore line: [gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_3c06a/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_3c06a.dir/build.make CMakeFiles/cmTC_3c06a.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o   -c /usr/local/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-x86_64-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/local/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccY5V6d8.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/local/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccjENnZz.s]
   ignore line: [GNU C17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "."]
+  ignore line: [ignoring duplicate directory "/usr/local/include/hiredis-vip"]
+  ignore line: [ignoring duplicate directory "."]
+  ignore line: [ignoring duplicate directory "/usr/local/include/hiredis-vip"]
+  ignore line: [ignoring duplicate directory "."]
   ignore line: [ignoring nonexistent directory "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
   ignore line: [ignoring nonexistent directory "/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
+  ignore line: [ .]
+  ignore line: [ /usr/local/include/hiredis-vip]
   ignore line: [ /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include]
   ignore line: [ /usr/local/include]
   ignore line: [ /opt/rh/devtoolset-8/root/usr/include]
@@ -147,15 +165,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 44fd30fd0fdcf2e8887a67e69c89caa4]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/as -v --64 -o CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o /tmp/ccY5V6d8.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/as -v --64 -o CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o /tmp/ccjENnZz.s]
   ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-55.el7.2]
   ignore line: [COMPILER_PATH=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_603a0]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_603a0.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o  -o cmTC_603a0 ]
+  ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_3c06a]
+  ignore line: [/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c06a.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o  -o cmTC_3c06a ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
@@ -164,14 +182,14 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
   ignore line: [COMPILER_PATH=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_603a0' '-mtune=generic' '-march=x86-64']
-  link line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGaqsvf.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_603a0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3c06a' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQ0O7jB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c06a /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8 -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /lib/../lib64/crtn.o]
     arg [/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/rh/devtoolset-8/root/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccGaqsvf.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQ0O7jB.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -187,7 +205,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_603a0] ==> ignore
+    arg [cmTC_3c06a] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> ignore
@@ -195,8 +213,15 @@ Parsed C implicit link information from above output:
     arg [-L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
     arg [-L/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
-    arg [CMakeFiles/cmTC_603a0.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_3c06a.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -212,26 +237,29 @@ Parsed C implicit link information from above output:
   collapse library dir [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/opt/rh/devtoolset-8/root/usr/lib64]
   collapse library dir [/lib/../lib64] ==> [/lib64]
   collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
   collapse library dir [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/opt/rh/devtoolset-8/root/usr/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8;/opt/rh/devtoolset-8/root/usr/lib64;/lib64;/usr/lib64;/opt/rh/devtoolset-8/root/usr/lib]
+  implicit dirs: [/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8;/opt/rh/devtoolset-8/root/usr/lib64;/lib64;/usr/lib64;/usr/local/lib/hiredis-vip;/opt/rh/devtoolset-8/root/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_57e2a/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_57e2a.dir/build.make CMakeFiles/cmTC_57e2a.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_57e2a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_57e2a.dir/feature_tests.c.o   -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_57e2a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57e2a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_57e2a.dir/feature_tests.c.o  -o cmTC_57e2a 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_73861/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_73861.dir/build.make CMakeFiles/cmTC_73861.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73861.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_73861.dir/feature_tests.c.o   -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_73861
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73861.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_73861.dir/feature_tests.c.o  -o cmTC_73861 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -241,17 +269,17 @@ gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMak
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_e3cbd/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_e3cbd.dir/build.make CMakeFiles/cmTC_e3cbd.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e3cbd.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e3cbd.dir/feature_tests.c.o   -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e3cbd
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3cbd.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e3cbd.dir/feature_tests.c.o  -o cmTC_e3cbd 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_9a7e9/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_9a7e9.dir/build.make CMakeFiles/cmTC_9a7e9.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a7e9.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_9a7e9.dir/feature_tests.c.o   -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9a7e9
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a7e9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9a7e9.dir/feature_tests.c.o  -o cmTC_9a7e9 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -261,17 +289,17 @@ gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMak
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_564e3/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_564e3.dir/build.make CMakeFiles/cmTC_564e3.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_564e3.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_564e3.dir/feature_tests.c.o   -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_564e3
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_564e3.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_564e3.dir/feature_tests.c.o  -o cmTC_564e3 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_ae51a/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_ae51a.dir/build.make CMakeFiles/cmTC_ae51a.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae51a.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ae51a.dir/feature_tests.c.o   -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ae51a
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae51a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ae51a.dir/feature_tests.c.o  -o cmTC_ae51a 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -279,42 +307,49 @@ gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMak
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_528ad/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_528ad.dir/build.make CMakeFiles/cmTC_528ad.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_528ad.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_528ad.dir/testCXXCompiler.cxx.o -c /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_528ad
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_528ad.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_528ad.dir/testCXXCompiler.cxx.o  -o cmTC_528ad 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_c712c/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_c712c.dir/build.make CMakeFiles/cmTC_c712c.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c712c.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_c712c.dir/testCXXCompiler.cxx.o -c /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c712c
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c712c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c712c.dir/testCXXCompiler.cxx.o  -o cmTC_c712c 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_66a37/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_66a37.dir/build.make CMakeFiles/cmTC_66a37.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake cmTC_cd6b7/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_cd6b7.dir/build.make CMakeFiles/cmTC_cd6b7.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-redhat-linux
 Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc5JWEl0.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc8sw8K3.s
 GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "."
+ignoring duplicate directory "/usr/local/include/hiredis-vip"
+ignoring duplicate directory "."
+ignoring duplicate directory "/usr/local/include/hiredis-vip"
+ignoring duplicate directory "."
 ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include-fixed"
 ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
+ .
+ /usr/local/include/hiredis-vip
  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5
  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux
  /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward
@@ -326,15 +361,15 @@ GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)
 	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 51b2dcccf6085e5bfbbf3932e5685252
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5JWEl0.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8sw8K3.s
 GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-34.base.el7
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_66a37
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66a37.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_66a37 
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_cd6b7
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd6b7.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cd6b7 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -343,15 +378,17 @@ Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/u
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_66a37' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_66a37 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cd6b7' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cd6b7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
+    add: [.]
+    add: [/usr/local/include/hiredis-vip]
     add: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5]
     add: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux]
     add: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward]
@@ -359,39 +396,48 @@ Parsed CXX implicit include dir info from above output: rv=done
     add: [/usr/local/include]
     add: [/usr/include]
   end of search list found
+  skipping relative include dir [.]
+  collapse include dir [/usr/local/include/hiredis-vip] ==> [/usr/local/include/hiredis-vip]
   collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5] ==> [/usr/include/c++/4.8.5]
   collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux] ==> [/usr/include/c++/4.8.5/x86_64-redhat-linux]
   collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward] ==> [/usr/include/c++/4.8.5/backward]
   collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/4.8.5;/usr/include/c++/4.8.5/x86_64-redhat-linux;/usr/include/c++/4.8.5/backward;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include;/usr/local/include;/usr/include]
+  implicit include dirs: [/usr/local/include/hiredis-vip;/usr/include/c++/4.8.5;/usr/include/c++/4.8.5/x86_64-redhat-linux;/usr/include/c++/4.8.5/backward;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include;/usr/local/include;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_66a37/fast ]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_66a37.dir/build.make CMakeFiles/cmTC_66a37.dir/build]
-  ignore line: [gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_cd6b7/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_cd6b7.dir/build.make CMakeFiles/cmTC_cd6b7.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-redhat-linux]
   ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc5JWEl0.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1plus -quiet -v -D_GNU_SOURCE /usr/local/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc8sw8K3.s]
   ignore line: [GNU C++ (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)]
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "."]
+  ignore line: [ignoring duplicate directory "/usr/local/include/hiredis-vip"]
+  ignore line: [ignoring duplicate directory "."]
+  ignore line: [ignoring duplicate directory "/usr/local/include/hiredis-vip"]
+  ignore line: [ignoring duplicate directory "."]
   ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include-fixed"]
   ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
+  ignore line: [ .]
+  ignore line: [ /usr/local/include/hiredis-vip]
   ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5]
   ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux]
   ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward]
@@ -403,15 +449,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 51b2dcccf6085e5bfbbf3932e5685252]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc5JWEl0.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8sw8K3.s]
   ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-34.base.el7]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_66a37]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66a37.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_66a37 ]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_cd6b7]
+  ignore line: [/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd6b7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_cd6b7 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -420,9 +466,9 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_66a37' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_66a37 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/local/lib/hiredis-vip/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_cd6b7' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cd6b7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/local/lib/hiredis-vip -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -434,7 +480,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_66a37] ==> ignore
+    arg [cmTC_cd6b7] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -442,8 +488,15 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
+    arg [-L/usr/local/lib/hiredis-vip] ==> dir [/usr/local/lib/hiredis-vip]
+    arg [-L.] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_66a37.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_cd6b7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -457,26 +510,29 @@ Parsed CXX implicit link information from above output:
   collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
   collapse library dir [/lib/../lib64] ==> [/lib64]
   collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
+  collapse library dir [/usr/local/lib/hiredis-vip] ==> [/usr/local/lib/hiredis-vip]
   collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/local/lib/hiredis-vip;/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_6af2a/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_6af2a.dir/build.make CMakeFiles/cmTC_6af2a.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6af2a.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_6af2a.dir/feature_tests.cxx.o -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6af2a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6af2a.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_6af2a.dir/feature_tests.cxx.o  -o cmTC_6af2a 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_46618/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_46618.dir/build.make CMakeFiles/cmTC_46618.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_46618.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_46618.dir/feature_tests.cxx.o -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_46618
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46618.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_46618.dir/feature_tests.cxx.o  -o cmTC_46618 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -539,17 +595,17 @@ gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMak
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_ac1ea/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_ac1ea.dir/build.make CMakeFiles/cmTC_ac1ea.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ac1ea.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_ac1ea.dir/feature_tests.cxx.o -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ac1ea
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac1ea.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ac1ea.dir/feature_tests.cxx.o  -o cmTC_ac1ea 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_f88cb/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_f88cb.dir/build.make CMakeFiles/cmTC_f88cb.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f88cb.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_f88cb.dir/feature_tests.cxx.o -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f88cb
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f88cb.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f88cb.dir/feature_tests.cxx.o  -o cmTC_f88cb 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -612,17 +668,17 @@ gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMak
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_5a6a5/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_5a6a5.dir/build.make CMakeFiles/cmTC_5a6a5.dir/build
-gmake[1]: Entering directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5a6a5.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_5a6a5.dir/feature_tests.cxx.o -c /home/wwt/chat_room/WebServer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5a6a5
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a6a5.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5a6a5.dir/feature_tests.cxx.o  -o cmTC_5a6a5 
-gmake[1]: Leaving directory `/home/wwt/chat_room/WebServer/build/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/gmake cmTC_02710/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_02710.dir/build.make CMakeFiles/cmTC_02710.dir/build
+gmake[1]: Entering directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_02710.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_02710.dir/feature_tests.cxx.o -c /home/wwt/WebServer_sylar/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_02710
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02710.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_02710.dir/feature_tests.cxx.o  -o cmTC_02710 
+gmake[1]: Leaving directory `/home/wwt/WebServer_sylar/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

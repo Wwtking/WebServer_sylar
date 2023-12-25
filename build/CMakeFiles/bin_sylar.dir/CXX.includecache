@@ -648,11 +648,11 @@ yaml-cpp/node/parse.h
 yaml-cpp/node/emit.h
 ../include/yaml-cpp/yaml-cpp/node/emit.h
 
-/home/wwt/chat_room/WebServer/src/main.cpp
+/home/wwt/WebServer_sylar/src/main.cpp
 application.h
-/home/wwt/chat_room/WebServer/src/application.h
+/home/wwt/WebServer_sylar/src/application.h
 log.h
-/home/wwt/chat_room/WebServer/src/log.h
+/home/wwt/WebServer_sylar/src/log.h
 stdlib.h
 -
 time.h

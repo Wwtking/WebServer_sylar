@@ -17,7 +17,7 @@ include_directories(include/db)
 include_directories(include/orm)
 include_directories(include/email)
 # 向工程添加多个特定的库文件搜索路径(静态库.a和动态库.so)
-link_directories(/home/wwt/WebServer/lib)  #用绝对路径
+link_directories(/home/wwt/WebServer_sylar/lib)  #用绝对路径
 
 # BUILD_TEST 选项将使用默认值 OFF
 # cmake .. 时，BUILD_TEST=OFF

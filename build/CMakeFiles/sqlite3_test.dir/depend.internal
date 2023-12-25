@@ -20,4 +20,4 @@ CMakeFiles/sqlite3_test.dir/tests/sqlite3_test.cpp.o
  ../include/util.h
  ../include/util/hash_util.h
  ../include/util/json_util.h
- /home/wwt/chat_room/WebServer/tests/sqlite3_test.cpp
+ /home/wwt/WebServer_sylar/tests/sqlite3_test.cpp

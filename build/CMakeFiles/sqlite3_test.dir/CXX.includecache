@@ -212,11 +212,11 @@ string
 json/json.h
 -
 
-/home/wwt/chat_room/WebServer/tests/sqlite3_test.cpp
+/home/wwt/WebServer_sylar/tests/sqlite3_test.cpp
 mysqlite3.h
-/home/wwt/chat_room/WebServer/tests/mysqlite3.h
+/home/wwt/WebServer_sylar/tests/mysqlite3.h
 log.h
-/home/wwt/chat_room/WebServer/tests/log.h
+/home/wwt/WebServer_sylar/tests/log.h
 util.h
-/home/wwt/chat_room/WebServer/tests/util.h
+/home/wwt/WebServer_sylar/tests/util.h
 

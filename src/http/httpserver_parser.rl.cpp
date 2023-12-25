@@ -1,5 +1,5 @@
 
-#line 1 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 1 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 /**
  *
  * Copyright (c) 2010, Zed A. Shaw and Mongrel2 Project Contributors.
@@ -49,7 +49,7 @@
 /** Machine **/
 // 多行的状态机定义以 %%{ 开始 %%} 结束。单行的状态机定义在行首以 %% 开始
 
-#line 275 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 275 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 
 
 /*
@@ -62,7 +62,7 @@
 
 /** Data 写入状态机数据**/
 
-#line 66 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 66 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 static const int http_parser_start = 1;
 static const int http_parser_first_final = 348;
 static const int http_parser_error = 0;
@@ -70,18 +70,18 @@ static const int http_parser_error = 0;
 static const int http_parser_en_main = 1;
 
 
-#line 287 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 287 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 
 int http_parser_init(http_parser *parser) {
   int cs = 0;
 
   
-#line 80 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 80 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	{
 	cs = http_parser_start;
 	}
 
-#line 293 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 293 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
   parser->cs = cs;
   parser->body_start = 0;
   parser->content_len = 0;
@@ -116,7 +116,7 @@ size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, 
   assert(pe - p == (int)len - (int)off && "pointers aren't same distance");
 
   
-#line 120 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 120 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	{
 	short _widec;
 	if ( p == pe )
@@ -138,7 +138,7 @@ st0:
 cs = 0;
 	goto _out;
 tr0:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -148,7 +148,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 152 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 152 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 32 )
 		goto tr4;
 	if ( (*p) > 57 ) {
@@ -158,7 +158,7 @@ case 2:
 		goto st175;
 	goto st0;
 tr4:
-#line 84 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 84 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_method != NULL) 
       parser->request_method(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -168,26 +168,26 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 172 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 172 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -216,77 +216,77 @@ case 3:
 		goto tr12;
 	goto st0;
 tr6:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
   }
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr37:
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr43:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
   }
-#line 94 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 94 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->fragment != NULL)
       parser->fragment(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr46:
-#line 94 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 94 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->fragment != NULL)
       parser->fragment(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr53:
-#line 99 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 99 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(query_start, p); 
     // parser->query_start = fpc - buffer;
   }
-#line 104 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 104 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr57:
-#line 104 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 104 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -296,12 +296,12 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 300 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 300 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 72 )
 		goto tr13;
 	goto st0;
 tr13:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -311,7 +311,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 315 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 315 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 84 )
 		goto st6;
 	goto st0;
@@ -367,19 +367,19 @@ case 12:
 	}
 	goto st0;
 tr21:
-#line 109 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 109 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{	
     if(parser->http_version != NULL)
       parser->http_version(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st13;
 tr30:
-#line 70 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 70 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(mark, p); 
     // parser->mark = fpc - buffer;
   }
-#line 75 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 75 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -390,7 +390,7 @@ tr30:
   }
 	goto st13;
 tr33:
-#line 75 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 75 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -404,7 +404,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 408 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 408 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 10: goto tr24;
 		case 13: goto tr25;
@@ -437,7 +437,7 @@ case 13:
 		goto tr23;
 	goto st0;
 tr23:
-#line 60 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 60 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(field_start, p);
     // parser->field_start = fpc - buffer; 
@@ -447,7 +447,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 451 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 451 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -479,14 +479,14 @@ case 14:
 		goto st14;
 	goto st0;
 tr27:
-#line 65 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 65 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     parser->field_len = LEN(field_start, p);
     // parser->field_len = fpc - buffer - parser->field_start
   }
 	goto st15;
 tr29:
-#line 70 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 70 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(mark, p); 
     // parser->mark = fpc - buffer;
@@ -496,7 +496,7 @@ st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 500 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 500 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 9: goto tr29;
@@ -507,7 +507,7 @@ case 15:
 	}
 	goto tr28;
 tr28:
-#line 70 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 70 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(mark, p); 
     // parser->mark = fpc - buffer;
@@ -517,7 +517,7 @@ st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 521 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 521 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 10: goto tr33;
@@ -526,19 +526,19 @@ case 16:
 	}
 	goto st16;
 tr22:
-#line 109 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 109 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{	
     if(parser->http_version != NULL)
       parser->http_version(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st17;
 tr31:
-#line 70 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 70 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(mark, p); 
     // parser->mark = fpc - buffer;
   }
-#line 75 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 75 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -549,7 +549,7 @@ tr31:
   }
 	goto st17;
 tr34:
-#line 75 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 75 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -563,17 +563,17 @@ st17:
 	if ( ++p == pe )
 		goto _test_eof17;
 case 17:
-#line 567 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 567 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 10 )
 		goto st13;
 	goto st0;
 tr24:
-#line 60 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 60 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(field_start, p);
     // parser->field_start = fpc - buffer; 
   }
-#line 119 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 119 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -590,7 +590,7 @@ tr24:
   }
 	goto st348;
 tr36:
-#line 119 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 119 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -610,7 +610,7 @@ st348:
 	if ( ++p == pe )
 		goto _test_eof348;
 case 348:
-#line 614 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 614 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -642,7 +642,7 @@ case 348:
 		goto st14;
 	goto st0;
 tr25:
-#line 60 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 60 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     MARK(field_start, p);
     // parser->field_start = fpc - buffer; 
@@ -652,7 +652,7 @@ st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 656 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 656 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	switch( (*p) ) {
 		case 10: goto tr36;
 		case 33: goto st14;
@@ -685,7 +685,7 @@ case 18:
 		goto st14;
 	goto st0;
 tr7:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -695,26 +695,26 @@ st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 699 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 699 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -742,58 +742,58 @@ case 19:
 		goto st19;
 	goto st0;
 tr8:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
   }
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr39:
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr55:
-#line 99 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 99 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(query_start, p); 
     // parser->query_start = fpc - buffer;
   }
-#line 104 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 104 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr59:
-#line 104 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 104 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 89 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 89 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -803,26 +803,26 @@ st20:
 	if ( ++p == pe )
 		goto _test_eof20;
 case 20:
-#line 807 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 807 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -846,7 +846,7 @@ case 20:
 		goto tr44;
 	goto st0;
 tr44:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -856,26 +856,26 @@ st21:
 	if ( ++p == pe )
 		goto _test_eof21;
 case 21:
-#line 860 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 860 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -899,7 +899,7 @@ case 21:
 		goto st21;
 	goto st0;
 tr45:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -909,7 +909,7 @@ st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 913 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 913 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st23;
@@ -933,7 +933,7 @@ case 23:
 		goto st21;
 	goto st0;
 tr9:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -943,7 +943,7 @@ st24:
 	if ( ++p == pe )
 		goto _test_eof24;
 case 24:
-#line 947 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 947 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st25;
@@ -967,7 +967,7 @@ case 25:
 		goto st19;
 	goto st0;
 tr203:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -977,26 +977,26 @@ st26:
 	if ( ++p == pe )
 		goto _test_eof26;
 case 26:
-#line 981 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 981 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1022,7 +1022,7 @@ case 26:
 		goto st26;
 	goto st0;
 tr204:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -1032,7 +1032,7 @@ st27:
 	if ( ++p == pe )
 		goto _test_eof27;
 case 27:
-#line 1036 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 1036 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st28;
@@ -1056,19 +1056,19 @@ case 28:
 		goto st26;
 	goto st0;
 tr11:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
   }
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
 	goto st29;
 tr42:
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -1078,26 +1078,26 @@ st29:
 	if ( ++p == pe )
 		goto _test_eof29;
 case 29:
-#line 1082 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 1082 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1122,7 +1122,7 @@ case 29:
 		goto tr54;
 	goto st0;
 tr54:
-#line 99 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 99 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(query_start, p); 
     // parser->query_start = fpc - buffer;
@@ -1132,26 +1132,26 @@ st30:
 	if ( ++p == pe )
 		goto _test_eof30;
 case 30:
-#line 1136 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 1136 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1176,7 +1176,7 @@ case 30:
 		goto st30;
 	goto st0;
 tr56:
-#line 99 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 99 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(query_start, p); 
     // parser->query_start = fpc - buffer;
@@ -1186,7 +1186,7 @@ st31:
 	if ( ++p == pe )
 		goto _test_eof31;
 case 31:
-#line 1190 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 1190 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st32;
@@ -1210,7 +1210,7 @@ case 32:
 		goto st30;
 	goto st0;
 tr10:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -1220,26 +1220,26 @@ st33:
 	if ( ++p == pe )
 		goto _test_eof33;
 case 33:
-#line 1224 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 1224 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1274,20 +1274,20 @@ case 34:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1325,20 +1325,20 @@ case 35:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1401,20 +1401,20 @@ case 38:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1456,20 +1456,20 @@ case 39:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1530,20 +1530,20 @@ case 42:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1580,20 +1580,20 @@ case 43:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3374,20 +3374,20 @@ case 171:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3421,20 +3421,20 @@ case 172:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3461,7 +3461,7 @@ case 172:
 		goto st172;
 	goto st0;
 tr12:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -3471,26 +3471,26 @@ st173:
 	if ( ++p == pe )
 		goto _test_eof173;
 case 173:
-#line 3475 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3475 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3532,20 +3532,20 @@ case 174:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3795,7 +3795,7 @@ case 193:
 		goto tr4;
 	goto st0;
 tr2:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -3805,7 +3805,7 @@ st194:
 	if ( ++p == pe )
 		goto _test_eof194;
 case 194:
-#line 3809 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3809 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) < 48 ) {
 		if ( 45 <= (*p) && (*p) <= 46 )
 			goto st195;
@@ -3840,7 +3840,7 @@ case 195:
 		goto st195;
 	goto st0;
 tr224:
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -3850,7 +3850,7 @@ st196:
 	if ( ++p == pe )
 		goto _test_eof196;
 case 196:
-#line 3854 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3854 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 62 )
 		goto st197;
 	goto st196;
@@ -3864,11 +3864,11 @@ case 197:
 	}
 	goto st196;
 tr227:
-#line 134 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 134 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       parser->xml_sent = 1;
   }
-#line 119 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 119 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -3885,11 +3885,11 @@ tr227:
   }
 	goto st349;
 tr235:
-#line 138 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 138 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       parser->json_sent = 1;
   }
-#line 119 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 119 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -3909,10 +3909,10 @@ st349:
 	if ( ++p == pe )
 		goto _test_eof349;
 case 349:
-#line 3913 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3913 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	goto st0;
 tr3:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -3922,26 +3922,26 @@ st198:
 	if ( ++p == pe )
 		goto _test_eof198;
 case 198:
-#line 3926 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3926 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3967,7 +3967,7 @@ case 198:
 		goto st202;
 	goto st0;
 tr228:
-#line 114 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 114 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -3977,12 +3977,12 @@ st199:
 	if ( ++p == pe )
 		goto _test_eof199;
 case 199:
-#line 3981 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3981 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 123 )
 		goto tr232;
 	goto st0;
 tr232:
-#line 55 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 55 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
 	{
     MARK(mark, p);
     // parser->mark = fpc - buffer;
@@ -3992,7 +3992,7 @@ st200:
 	if ( ++p == pe )
 		goto _test_eof200;
 case 200:
-#line 3996 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl.cpp"
+#line 3996 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl.cpp"
 	if ( (*p) == 125 )
 		goto st201;
 	goto st200;
@@ -4014,20 +4014,20 @@ case 202:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4087,20 +4087,20 @@ case 205:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4158,20 +4158,20 @@ case 208:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4204,20 +4204,20 @@ case 209:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4253,20 +4253,20 @@ case 210:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4327,20 +4327,20 @@ case 213:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4380,20 +4380,20 @@ case 214:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4454,20 +4454,20 @@ case 217:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4502,20 +4502,20 @@ case 218:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6290,20 +6290,20 @@ case 346:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6337,20 +6337,20 @@ case 347:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 148 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 148 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6730,7 +6730,7 @@ case 347:
 	_out: {}
 	}
 
-#line 328 "/home/wwt/chat_room/WebServer/src/http/httpserver_parser.rl"
+#line 328 "/home/wwt/WebServer_sylar/src/http/httpserver_parser.rl"
   assert(p <= pe && "Buffer overflow after parsing.");
 
   if (!http_parser_has_error(parser)) {
