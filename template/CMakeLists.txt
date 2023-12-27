@@ -15,6 +15,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/WebServer_sylar)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/WebServer_sylar/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/WebServer_sylar/include/http)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/WebServer_sylar/include/stream)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/WebServer_sylar/include/util)
 # 向工程添加多个特定的库文件搜索路径(静态库.a和动态库.so)
 link_directories(/home/wwt/project_name/WebServer_sylar/lib)  #用绝对路径
 
